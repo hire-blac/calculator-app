@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+  font-family: Spartan;
+}
+body {
+  background: hsl(222, 26%, 31%);
+  color: white;
+}
+.calculator {
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.theme {
+  font-size: 10px;
+}
+.choose-theme {
+  display: inline-block;
+  background: hsl(223, 31%, 20%);
+  padding: 2px;
+  border-radius: 10px;
+}
+.theme input {
+  margin: 0;
+}
+.display {
+  background: hsl(224, 36%, 15%);
+  height: 70px;
+  border-radius: 10px;
+  text-align: end;
+  padding: 1px 20px;
+  margin: 10px 0;
+}
+.keypad {
+  background: hsl(223, 31%, 20%);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.key-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.bottom-row button {
+  width: 48%;
+}
+button {
+  font-size: 32px;
+  width: 55px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  color: hsl(222, 26%, 31%);
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0 4px hsl(28, 16%, 50%);
+}
+button.text {
+  background: hsl(225, 21%, 49%);
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+button.text:active {
+  box-shadow: 0 4px hsl(224, 28%, 25%);
+}
+button.equal {
+  background: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+}
+button.equal:active {
+  box-shadow: 0 4px hsl(6, 70%, 24%);
+}
+
+body.theme-2 {
+  background: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+.theme-2 .choose-theme {
+  background: hsl(0, 5%, 81%);
+}
+.theme-2 .keypad {
+  background: hsl(0, 5%, 81%);
+}
+.theme-2 .display {
+  background: hsl(0, 0%, 93%);
+}
+.theme-2 button {
+  color: hsl(60, 10%, 19%);
+  box-shadow: 0 4px hsl(35, 11%, 61%);
+}
+.theme-2 button:active {
+  box-shadow: 0 4px hsl(35, 11%, 51%);
+}
+.theme-2 button.text {
+  background: hsl(185, 42%, 37%);
+  color: white;
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+}
+.theme-2 button.text:active {
+  box-shadow: 0 4px hsl(185, 58%, 15%);
+}
+.theme-2 button.equal {
+  background: hsl(25, 98%, 40%);
+  color: white;
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+}
+.theme-2 button.equal:active {
+  box-shadow: 0 4px hsl(25, 99%, 17%);
+}
+
+body.theme-3 {
+  background: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+.theme-3 .choose-theme {
+  background: hsl(268, 71%, 12%);
+}
+.theme-3 .keypad {
+  background: hsl(268, 71%, 12%);
+}
+.theme-3 .display {
+  background: hsl(268, 71%, 12%);
+}
+.theme-3 button {
+  background: hsl(268, 47%, 21%);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0 4px hsl(290, 70%, 36%);
+}
+.theme-3 button:active {
+  box-shadow: 0 4px hsl(290, 70%, 26%);
+}
+.theme-3 button.text {
+  background: hsl(281, 89%, 26%);
+  color: white;
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+}
+.theme-3 button.text:active {
+  box-shadow: 0 4px hsl(285, 91%, 32%);
+}
+.theme-3 button.equal {
+  background: hsl(176, 100%, 44%);
+  color: black;
+  box-shadow: 0 4px hsl(177, 92%, 70%);
+}
+.theme-3 button.equal:active {
+  box-shadow: 0 4px hsl(177, 92%, 30%);
+}
