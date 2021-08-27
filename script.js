@@ -18,7 +18,6 @@ function changeTheme(theme) {
       document.getElementById('currentTheme').className = "theme-3";
       break;
   }
-  console.log(`Theme ${theme} selected`)
 }
 
 function handleClick(label) {
@@ -52,19 +51,25 @@ function handleClick(label) {
 }
 
 function calculate(num1, num2, operator) {
-  
+  let result;
   switch (operator) {
     case "x":
-      return num1 * num2;
+      result = num1 * num2;
+      break;
     case "+":
-      return num1 + num2;
+      result = num1 + num2;
+      break;
     case "-":
-      return num1 -num2;
+      result = num1 -num2;
+      break;
     case "/":
-      return num1 / num2;
+      result = num1 / num2;
+      break;
     default:
-      return num1;
+      result = num1;
+      break;
   }
+  return Number.isInteger(result) ? result : result.toPrecision(9);
 }
 
 function display(number) {
